@@ -1124,6 +1124,7 @@ function ComposerPills({
         contentContainerStyle={[a.gap_sm]}
         horizontal={true}
         bounces={false}
+        keyboardShouldPersistTaps="always"
         showsHorizontalScrollIndicator={false}>
         {isReply ? null : (
           <ThreadgateBtn
@@ -1241,7 +1242,7 @@ function ComposerFooter({
                 onPress={onEmojiButtonPress}
                 style={a.p_sm}
                 label={_(msg`Open emoji picker`)}
-                accessibilityHint={_(msg`Open emoji picker`)}
+                accessibilityHint={_(msg`Opens emoji picker`)}
                 variant="ghost"
                 shape="round"
                 color="primary">
